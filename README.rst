@@ -1,7 +1,19 @@
 Simple Letter Counter
 =====================
 
-A very simple Python program that counts letters in text using the ``len()`` function.
+A very simple Python program that counts letters in text using Python's built-in ``len()`` function.
+
+What is len()?
+--------------
+``len()`` is one of Python's most useful built-in functions. It returns the **length** (number of items) of any object.
+
+What ``len()`` works with:
+- **Strings**: ``len("hello")`` returns ``5`` (5 characters)
+- **Lists**: ``len([1, 2, 3])`` returns ``3`` (3 items)  
+- **Dictionaries**: ``len({"a": 1, "b": 2})`` returns ``2`` (2 key-value pairs)
+- **Sets**: ``len({1, 2, 2, 3})`` returns ``3`` (unique items only)
+
+In our program, we use ``len()`` to count how many letters are in a list
 
 What It Does
 ------------
