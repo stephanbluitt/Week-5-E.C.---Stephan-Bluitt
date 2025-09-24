@@ -52,3 +52,19 @@ This line creates a list of only letter characters.
     total_letters = len(letters)
 
 This line counts how many letters are in the list.
+
+
+Code:
+
+# Simple Letter Counter using len()
+# This program counts how many letters are in your text
+
+print("=== LETTER COUNTER ===")
+text = input("Enter your text: ")
+
+# Count only letters using len()
+letters = [char for char in text if char.isalpha()]
+total_letters = len(letters)
+
+print(f"\nYour text: '{text}'")
+print(f"Total letters: {total_letters}")
