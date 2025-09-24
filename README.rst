@@ -1,42 +1,54 @@
-# Week-5-E.C.---Stephan-Bluitt
-# Small repository to explain a new concept
+Simple Letter Counter
+=====================
 
-Text Counter with Collections.Counter
-=====================================
+A very simple Python program that counts letters in text using the ``len()`` function.
 
-This demo shows how to use ``collections.Counter`` for advanced text analysis, going beyond simple counting loops.
-
-What is collections.Counter?
-----------------------------
-``Counter`` is a dictionary subclass in Python's standard library designed for counting hashable objects. It's optimized for counting and provides useful methods like ``most_common()``.
-
-Installation
+What It Does
 ------------
-No installation required! ``collections.Counter`` is part of Python's standard library.
+- Asks you to type some text
+- Counts only letters (A-Z, a-z)
+- Ignores spaces, numbers, and punctuation
+- Shows the total number of letters
 
-Demo Files
+How to Run
 ----------
+1. Make sure you have Python installed
+2. Download ``letter_counter.py``
+3. Open terminal/command prompt
+4. Type::
 
-1. ``basic_counter.py``
-   * Basic letter and word counting
-   * Comparing Counter to manual approaches
+    python letter_counter.py
 
-2. ``advanced_counter.py``
-   * Mathematical operations with counters
-   * Finding most common elements
-   * Working with large text files
+5. Enter your text when asked!
 
-Example Usage
--------------
+Example
+-------
+::
 
-.. code-block:: python
-
-    from collections import Counter
+    === LETTER COUNTER ===
+    Enter your text: Hello World! 123
     
-    # Count letters in a word
-    word = "mississippi"
-    letter_count = Counter(word)
-    print(letter_count)  # Counter({'i': 4, 's': 4, 'p': 2, 'm': 1})
-    
-    # Get most common letters
-    print(letter_count.most_common(2))  # [('i', 4), ('s', 4)]
+    Your text: 'Hello World! 123'
+    Total letters: 10
+
+How It Works
+------------
+The program uses:
+
+- ``input()`` - to get text from user
+- ``.isalpha()`` - to check if character is a letter
+- ``len()`` - to count the letters
+
+Code Explanation
+----------------
+::
+
+    letters = [char for char in text if char.isalpha()]
+
+This line creates a list of only letter characters.
+
+::
+
+    total_letters = len(letters)
+
+This line counts how many letters are in the list.
